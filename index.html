@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Krub:ital,wght@1,500&family=Red+Hat+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="productos.js"></script>
+    <script src="app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+        <div id="cart-container" class="">
+            <aside class="cart">
+              <button class="cart-close">
+                <img src="img/close.png" alt="">
+              </button>
+              <header>
+                <button id="empty_cart" class="cart-checkout empty btn">vaciar carro</button>
+                <h3 class="text-slanted">Tu carrito:</h3>
+              </header>
+              <!-- cart items -->
+              <div class="cart-items"></div>
+              <footer>
+               
+                <h3 class="cart-total text-slanted">
+                  total : 0€
+                </h3>
+                <button id="checkout" class="cart-checkout btn">checkout</button>
+              </footer>
+            </aside>
+        </div>
+    <header>
+        <div id="title">
+            <h1>FAIR GAMING</h1>
+            <h2 class="h1subtitle">Tus juegos, al precio que deben tener</h2>
+        </div>
+        <div class="cart-opener">
+            <img src="img/cart2.png" alt="">
+        </div>
+    </header>
+    <section id="banner">
+        <img src="" alt="">
+    </section>
+    
+
+    <main>
+        <section id="menu">
+            <article id="filter-categories" class="filter-container">
+                <span class="legend">Categoría</span>
+                <select name="" id="categories_select">
+                </select>
+            </article>
+            <article id="filter-name" class="filter-container">
+                <span class="legend">Búsqueda</span>
+                <input type="text" placeholder="buscar" id="search">
+            </article>
+            <article id="filter-price" class="filter-container">
+                <span class="legend" id="price-legend">Precio</span>
+                <input type="range" id="range">
+            </article>
+            <article id="filter-date" class="filter-container">
+                <span class="legend">Fecha</span>
+                <div>
+                    <input type="date" id="date-start">
+                    <input type="date" id="date-end">
+                </div>
+
+            </article>
+        </section>
+
+        <section id="lista">
+            <div id="loading">
+                <img src="img/loading4.gif" alt="">
+                <!-- <progress max="100"></progress> -->
+              </div>
+        </section>
+        <div class="pages-container">
+            <a href="" id="previous">previous</a>
+            <a href="" id="next">next</a>
+        </div>
+    </main>
+
+    <div class="alerta">
+    
+    </div>
+    <div class="modal">
+        <button class="modal-close">
+          <img src="img/close.png" alt="">
+        </button>
+        <div class="modal-content">
+          <div class="modal-video-player">
+            <iframe src="https://www.youtube.com/embed/aAa9Ao26gtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="modal-info">
+            <span>title</span>
+            <span>pr</span>
+            <span>pr</span>
+            <span>pr</span>
+            <div class="modal-buy-button"></div>
+          </div>         
+
+        </div>
+</body>
+</html>
